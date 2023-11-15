@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REST_URL = "http://localhost:8080"
+const REST_URL = "http://localhost:8080/api"
 
 const getAll = () => (
     axios

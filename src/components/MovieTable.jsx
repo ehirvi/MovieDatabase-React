@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardActions, CardContent, CardHeader, Typography 
 
 const MovieTable = ({ data }) => {
     return (
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div>
             {data.map(movie => <MovieCard key={movie.id} movie={movie} />)}
         </div>
     )
@@ -12,7 +12,7 @@ const MovieTable = ({ data }) => {
 const MovieCard = ({ movie }) => {
     return (
         <div style={{ margin: "20px" }}>
-            <Card sx={{ minWidth: 250, maxWidth: 250, minHeight: 200, maxHeight: 200 }}>
+            <Card sx={{ minWidth: 250, maxWidth: 250, minHeight: 300, maxHeight: 300 }}>
                 <CardActionArea>
                     <CardContent>
                         <Typography variant="h5" component="div">

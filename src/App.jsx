@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import MovieService from './services/MovieService';
 import MovieTable from './components/MovieTable';
+import './App.css';
 
 
 function App() {
