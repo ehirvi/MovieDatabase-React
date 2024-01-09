@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 html {
   display: flex;
   align-items: center;
@@ -5,7 +11,33 @@ html {
 }
 
 body {
-  flex-direction: row;
-  flex-wrap: wrap;
   max-width: 1280px;
+  background-color: rgb(233, 233, 233);
+}
+
+.movie-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2%;
+  text-align: center;
+}
+
+.movie-card:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  /* border-color: white; */
+  color: white;
+  cursor: pointer;
 }

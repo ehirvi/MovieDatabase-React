@@ -1,8 +1,6 @@
-import { Card, CardActionArea, CardActions, CardContent, CardHeader, Typography } from "@mui/material"
-
 const MovieTable = ({ data }) => {
     return (
-        <div>
+        <div className="movie-table">
             {data.map(movie => <MovieCard key={movie.id} movie={movie} />)}
         </div>
     )
@@ -11,22 +9,11 @@ const MovieTable = ({ data }) => {
 
 const MovieCard = ({ movie }) => {
     return (
-        <div style={{ margin: "20px" }}>
-            <Card sx={{ minWidth: 250, maxWidth: 250, minHeight: 300, maxHeight: 300 }}>
-                <CardActionArea>
-                    <CardContent>
-                        <Typography variant="h5" component="div">
-                            {movie.name}
-                        </Typography>
-                        <Typography variant="h6" gutterBottom>
-                            {movie.release_year}
-                        </Typography>
-                        <Typography variant="body2" color={"text.secondary"}>
-                            {movie.description}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+        <div className="movie-card" onClick={() => console.log("clicked on card")}>
+            <img src={`http://localhost:8080/images/movie/${movie.id}`} alt="movieposter" width="90px"/>
+            <h2>{movie.name}</h2>
+            <h3>{movie.release_year}</h3>
+            {/* <h4>{movie.description}</h4> */}
         </div>
     )
 }
