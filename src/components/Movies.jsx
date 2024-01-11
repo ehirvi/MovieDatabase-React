@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
-import MovieService from './services/MovieService';
-import MovieTable from './components/MovieTable';
-import './App.css';
+import MovieService from '../services/MovieService';
+import MovieList from './MovieList';
 
 
-function App() {
+const Movies = () => {
 
   const [movies, setMovies] = useState([]);
 
@@ -16,9 +15,9 @@ function App() {
 
   return (
     <>
-      <MovieTable data={movies} />
+      <MovieList data={movies} />
     </>
   )
 }
 
-export default App
+export default Movies

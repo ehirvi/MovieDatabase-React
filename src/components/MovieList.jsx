@@ -1,4 +1,4 @@
-const MovieTable = ({ data }) => {
+const MovieList = ({ data }) => {
     return (
         <div className="movie-table">
             {data.map(movie => <MovieCard key={movie.id} movie={movie} />)}
@@ -18,4 +18,4 @@ const MovieCard = ({ movie }) => {
     )
 }
 
-export default MovieTable
+export default MovieList
