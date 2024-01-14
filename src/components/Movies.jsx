@@ -8,6 +8,10 @@ const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
+    document.title = "Movies | MovieDB"
+  }, [])
+
+  useEffect(() => {
     MovieService
       .getAll()
       .then(movieData => setMovies(movieData))

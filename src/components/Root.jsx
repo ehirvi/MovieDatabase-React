@@ -4,10 +4,12 @@ const Root = () => {
     return (
         <>
             <nav className="nav-bar">
-                <Link to={"/"}>Home</Link>
-                <Link to={"/movies"}>Movies</Link>
+                    <Link to={"/"} className="nav-item">Home</Link>
+                    <Link to={"/movies"} className="nav-item">Movies</Link>
             </nav>
-            <Outlet />
+            <div className="content">
+                <Outlet />
+            </div>
         </>
     )
 }
