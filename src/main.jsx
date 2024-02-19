@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './css/style.css';
+import './css/style.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Root from './components/Root.jsx';
+import Root from './components/Root.jsx'
 import Index from './components/Index.jsx'
 import Movies from './components/Movies.jsx'
-import MovieInfo from './components/MovieInfo.jsx';
-import ErrorPage from './components/ErrorPage.jsx';
+import MovieInfo from './components/MovieInfo.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -19,12 +19,13 @@ const router = createBrowserRouter([
         index: true
       },
       {
-        path: "movies",
+        path: 'movies',
         element: <Movies />
       },
       {
-        path: "movies?=:movieId",
-        element: <MovieInfo />
+        path: 'movies?=:movieId',
+        element: <MovieInfo />,
+        // loader=
       }
     ]
   }

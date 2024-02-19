@@ -1,14 +1,15 @@
-import { useEffect } from "react"
+import React from 'react'
+import { useEffect } from 'react'
 
 const Index = () => {
 
-    useEffect(() => {
-        document.title = "Home | MovieDB"
-    }, [])
+  useEffect(() => {
+    document.title = 'Home | MovieDB'
+  }, [])
 
-    return (
-        <h1>Welcome</h1>
-    )
+  return (
+    <h1>Welcome</h1>
+  )
 }
 
 export default Index

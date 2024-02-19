@@ -1,14 +1,14 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
-import MovieService from '../services/MovieService';
-import MovieList from './MovieList';
-
+import MovieService from '../services/MovieService'
+import MovieList from './MovieList'
 
 const Movies = () => {
 
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    document.title = "Movies | MovieDB"
+    document.title = 'Movies | MovieDB'
   }, [])
 
   useEffect(() => {
